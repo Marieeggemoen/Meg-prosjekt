@@ -5,31 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
     <!-- NAVBAR -->
     <header>
         <div class="nav">
+            <div class="logo-wrapper">
+                <a href="index.html"><img src="./Bilder/MSE logo.png" alt="logo"></a>
+            </div>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="timeplan.html">Timeplan</a></li>
-                <li><a href="interesser.html">Interesser</a></li>
+                <li class="nav-interesser"><a href="interesser.html">Interesser</a></li>
                 <li><a href="bildegalleri.html">Bildegalleri</a></li>
             </ul>
         </div>
     </header>
     <!-- NAVBAR -->
 
-
-    <h1>Mine interesser</h1>
+    <h5>Mine interesser:</h5>
     <section class="interesser">
         <div class="grid-card tennis">
             <div class="info">
                 <h2>Tennis</h2>
-                <p>Jeg spiller tennis hos Vestre Bærum tennisklubb, og jeg trener på tirsdager og fredager. Jeg har spilt hele barneskolen, og startet igjen for omtrent 2 år siden. Det er veldig gøy!</p>
+                <p>Jeg spiller tennis hos
+                    <a href="https://vbtk.no/" target="_blank">Vestre Bærum tennisklubb</a>
+                    , og jeg trener på tirsdager og fredager. Jeg har spilt hele barneskolen, og startet igjen for
+                    omtrent 2 år siden. Det er veldig gøy!
+                </p>
             </div>
             <div class="bilde">
                 <img src="./Bilder/tennis.bilde.jpg" alt="Tennis">
@@ -39,7 +48,8 @@
         <div class="grid-card fotball">
             <div class="info">
                 <h2>Fotball</h2>
-                <p>Fotball er en sport jeg har holdt på med hele livet. Jeg startet med fotballtreninger for ØHIL for over 12 år siden (!), fra 1. klasse på barneskolen.</p>
+                <p>Fotball er en sport jeg har holdt på med hele livet. Jeg startet med fotballtreninger for <a href="https://ohil.no/" target="_blank">ØHIL</a> for
+                    over 12 år siden (!), fra 1. klasse på barneskolen.</p>
             </div>
             <div class="bilde">
                 <img src="./Bilder/fotball.bilde.jpg" alt="Fotball">
@@ -48,7 +58,9 @@
         <div class="grid-card piano">
             <div class="info">
                 <h2>Piano</h2>
-                <p>Å spille piano er veldig morsomt. Jeg syntes det er veldig gøy å lære å spille sanger, og nå for tiden spiller jeg mest klassisk musikk. Jeg startet opp med å spille piano i 8. klasse, etter å ha hatt en pause i to år. Samlet har jeg spilt i 8 år.</p>
+                <p>Å spille piano er veldig morsomt. Jeg syntes det er veldig gøy å lære å spille sanger, og nå for
+                    tiden spiller jeg mest klassisk musikk. Jeg startet opp med å spille piano i 8. klasse, etter å ha
+                    hatt en pause i to år. Samlet har jeg spilt i 8 år.</p>
             </div>
             <div class="bilde">
                 <img src="./Bilder/piano.bilde.jpg" alt="Piano">
@@ -56,7 +68,7 @@
         </div>
     </section>
 
-<footer>
+    <footer>
         <ul>
             <li><i class="fa-solid fa-circle-user"></i>Marie Sandnes Eggemoen</li>
             <li><i class="fa-solid fa-phone"></i>Tlf:+47 39 23 21</li>
