@@ -49,6 +49,7 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
+     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3);
  }
 
  .nav>ul {
@@ -120,6 +121,9 @@
      font-size: 60px;
      text-align: center;
  }
+main{
+    
+}
 
  main p {
      padding: 10px;
@@ -129,8 +133,9 @@
      margin: 20px 70px;
  }
 
- .hovedside {
+ .main-content {
      display: flex;
+     flex-wrap: wrap;
      padding: 30px;
      gap: 100px;
      justify-content: center;
@@ -162,7 +167,13 @@
  }
 
 
-
+ /* body{
+    min height: 100vh;
+ }
+ main{
+    flex-grow: 1;
+ }
+ */
 
 
 
@@ -172,12 +183,9 @@
  /* INDEX */
  /* TIMEPLAN */
 
-/* .timeplan li:nth-child(2){
-     color: purple;
-     background-color: rgba(aliceblue, 0.3);
-     border-radius: 8%;
-     
-} */
+.timeplan nav li:nth-child(2){
+     background-color: (aliceblue);    
+}
 
  h4,
  h5 {
@@ -387,7 +395,20 @@
      object-fit: cover;
      aspect-ratio: 1/1;
      justify-content: end;
+     border-radius: 2px;
  }
+
+ .tennis img{
+     border: 7px solid  rgb(163, 65, 27);
+    }
+
+.fotball img{
+    border: 7px solid rgb(236, 236, 141);
+}
+
+.piano img{
+    border: 7px solid rgb(9, 192, 183);
+}
 
 
 
