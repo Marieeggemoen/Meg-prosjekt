@@ -246,6 +246,9 @@
 
 
  @media(max-width: 1230px) {
+    h1{
+        font-size: 40px;
+    }
      .section-2 {
          grid-template-columns: 1fr;
          gap: 10px;
