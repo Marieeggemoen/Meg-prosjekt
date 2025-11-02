@@ -9,6 +9,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body class="timeplan">
@@ -19,101 +20,133 @@
                 <a href="index.html"><img src="./Bilder/MSE logo.png" alt="logo"></a>
             </div>
             <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="timeplan.html">Timeplan</a></li>
+                <li><a href="index.html">Hjem</a>
+                </li>
+                <li><a style="background-color: aliceblue; color: purple; border-radius: 8%;" href="timeplan.html">Timeplan</a></li>
                 <li><a href="interesser.html">Interesser</a></li>
                 <li><a href="bildegalleri.html">Bildegalleri</a></li>
             </ul>
         </div>
     </header>
     <!-- NAVBAR -->
-
     <h4>Timeplan <i class="fa-solid fa-calendar-days"></i></h4>
 
     <div class="container">
         <table>
             <tr> <!-- tablerow -->
                 <th>Tid</th>
-                <th>Mandag</th> <!-- tableheading -->
-                <th>Tirsdag</th>
-                <th>Onsdag</th>
-                <th>Torsdag</th>
-                <th>Fredag</th>
+                <th colspan="2">Mandag</th> <!-- tableheading -->
+                <th colspan="2">Tirsdag</th>
+                <th colspan="2">Onsdag</th>
+                <th colspan="2">Torsdag</th>
+                <th colspan="2">Fredag</th>
             </tr>
-            
-            <!-- <div class="uker">
-                <tr>
-                    <td>Uke</td>
-                    <div>
-                        <td>Partall</td>
-                        <td>Oddetall</td>
-                    </div>
-                    <div>
-                        <td>Partall</td>
-                        <td>Oddetall</td>
-                    </div>
-                    <div>
-                        <td>Partall</td>
-                        <td>Oddetall</td>
-                    </div>
-                    <div>
-                        <td>Partall</td>
-                        <td>Oddetall</td>
-                    </div>
-                </tr>
-            </div> -->
+
+            <tr class="uke">
+                <th>Uke</th>
+                <th>Partall</th>
+                <th>Oddetall</th>
+                <th>Partall</th>
+                <th>Oddetall</th>
+                <th>Partall</th>
+                <th>Oddetall</th>
+                <th>Partall</th>
+                <th>Oddetall</th>
+                <th>Partall</th>
+                <th>Oddetall</th>
+            </tr>
+
 
             <tbody>
                 <tr>
                     <td>08:15-09:50</td> <!-- tabledata -->
                     <td class="kjemi">Kjemi</td>
-                    <td></td>
-                    <td class="tysk">Tysk</td>
-                    <td class="kjemi">Kjemi</td>
-                    <td class="fysikk">Fysikk</td>
+                    <td class="IT">IT</td>
+                    <td colspan="2"></td>
+                    <td colspan="2" class="tysk">Tysk</td>
+                    <td colspan="2" class="kjemi">Kjemi</td>
+                    <td colspan="2" class="fysikk">Fysikk</td>
                 </tr>
                 <tr>
                     <td>10:00-11:35</td>
-                    <td class="fysikk">Fysikk</td>
-                    <td class="R1">R1</td>
-                    <td class="norsk">Norsk</td>
-                    <td class="historie">Historie</td>
-                    <td class="IT">IT</td>
+                    <td colspan="2" class="fysikk">Fysikk</td>
+                    <td colspan="2" class="R1">R1</td>
+                    <td colspan="2" class="norsk">Norsk</td>
+                    <td colspan="2" class="historie">Historie</td>
+                    <td colspan="2" class="IT">IT</td>
                 </tr>
                 <tr>
                     <td>11:35-12:20</td>
-                    <td colspan="5">Storefri</td>
+                    <td colspan="10">Storefri</td>
                 </tr>
                 <tr>
                     <td>12:20-13:55</td>
-                    <td class="norsk">Norsk</td>
-                    <td class="gym">Gym</td>
-                    <td class="IT">IT</td>
-                    <td class="R1">R1</td>
-                    <td class="tysk">Tysk</td>
+                    <td colspan="2" class="norsk">Norsk</td>
+                    <td colspan="2" class="gym">Gym</td>
+                    <td colspan="2" class="IT">IT</td>
+                    <td colspan="2" class="R1">R1</td>
+                    <td colspan="2" class="tysk">Tysk</td>
                 </tr>
                 <tr>
                     <td>14:05-15:40</td>
                     <td class="klassetime">Klassens time</td>
-                    <td class="kjemi">Kjemi</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="R1">R1</td>
+                    <td colspan="2" class="kjemi">Kjemi</td>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <section class="fag-section">
+        <div class="fag">
+            <div class="grid-card2 R1-fag">
+                <h2>R1</h2>
+                <div class="grid-card-info">
+                    <p>Jeg valgte matematikk R1 til VG2, fordi jeg likte 1T godt, og hadde lyst til å fortsette med en utfordrende matte.</p>
+                </div>
+            </div>
+
+            <div class="grid-card2 Kjemi-fag">    
+                <h2>Kjemi</h2>
+                <div class="grid-card-info">
+                    <p>Kjemi var et tema jeg syntes var svært gøy i naturfag i VG1, så jeg hadde veldig lyst å ta det som programmfag i VG2 også. Hittill i år liker jeg kjemi veldig godt, og jeg kan tenke meg å ta det faget neste år også!</p>
+                </div>
+            </div>
+            
+            <div class="grid-card2 Fysikk-fag">
+                <h2>Fysikk</h2>
+                <div class="grid-card-info">
+                    <p>Fysikk er et veldig spennende og interressant fag. Jeg var forberedt på at det ville være et vanskelig fag, men jeg hadde fortsatt lyst til å lære mer om hvordan verden egentlig fungerer. Derfor valgte jeg fysikk 1!</p>
+                </div>
+            </div>
+                
+            <div class="grid-card2 IT-fag">
+                <h2>IT</h2>
+                <div class="grid-card-info">
+                    <p>IT er et fag jeg ikke hadde trodd kom til å være så gøy som det er. Jeg var veldig usikker på om jeg skulle velge IT som et programmfag, men jeg er veldig glad for at jeg gjorde det. Det er veldig gøy å lage og designe nettsider!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
-<footer>
+     <!-- FOOTER -->
+    <footer>
         <ul>
             <li><i class="fa-solid fa-circle-user"></i>Marie Sandnes Eggemoen</li>
-            <li><i class="fa-solid fa-phone"></i>Tlf:+47 39 23 21</li>
-            <li><i class="fa-solid fa-house"></i>Gjønnesjordet 31</li>
-            <li><i class="fa-solid fa-envelope"></i>mrieseggemn@outlock.com</i>
+            <div class="kontakt">
+                <li><i class="fa-solid fa-phone"></i>Tlf:+47 39 23 21</li>
+                <li><i class="fa-solid fa-house"></i><a target="_blank"
+                        href="https://www.google.com/maps/place/Gj%C3%B8nnesjordet+31,+1357+Bekkestua/@59.9160187,10.5718869,17z/data=!3m1!4b1!4m5!3m4!1s0x46416cd2b63d981f:0x24036037204bd19c!8m2!3d59.916016!4d10.5744618?entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D">Gjønnesjordet
+                        31</a></li>
+                <li><i class="fa-solid fa-envelope"></i>maseggemn@outlook.com</i>
+            </div>
         </ul>
-
     </footer>
+    <!-- FOOTER -->
 
 </body>
 
